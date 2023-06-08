@@ -4,8 +4,7 @@ const NotFound = () => {
   return (
     <div className="flex justify-center items-center">
       <div>
-        <img src={pic}alt="" />
-        {/*  width="150" height="150"  */}
+        <img src={pic}alt="" width="500" height="500"/>
         <button className="btn btn-neutral">
           <Link to="/">Home</Link>
         </button>
