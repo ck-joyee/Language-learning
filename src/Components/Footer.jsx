@@ -31,7 +31,8 @@ const Footer = () => {
          height="80"
         
          className="fill-current"
-         src={logo} alt="" />
+         src={logo} alt="" 
+         />
           <p>
            Language Learning <br />
             Providing efficient learning service since 2014
