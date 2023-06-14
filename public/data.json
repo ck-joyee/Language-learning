@@ -1,0 +1,39 @@
+[
+    {
+      "_id": "1",
+      "image": "https://img.freepik.com/free-vector/hand-drawn-english-school-illustration_23-2149491453.jpg?size=626&ext=jpg&uid=R98219700&ga=GA1.2.1081700445.1665935105&semt=ais",
+      "activity": "English Conversation",
+      "students": 30
+    },
+    {
+      "_id": "2",
+      "image": "https://img.freepik.com/free-vector/spanish-concept-illustration_114360-15686.jpg?size=626&ext=jpg&uid=R98219700&ga=GA1.2.1081700445.1665935105&semt=ais",
+      "activity": "Spanish for Beginners",
+      "students": 28
+    },
+    {
+      "_id": "3",
+      "image": "https://img.freepik.com/free-vector/learning-french-concept-illustration_114360-16502.jpg?size=626&ext=jpg&uid=R98219700&ga=GA1.2.1081700445.1665935105&semt=ais",
+      "activity": "French Immersion",
+      "students": 25
+    },
+    {
+      "_id": "4",
+      "image": "https://img.freepik.com/free-photo/learn-german-language-online-education-concept_53876-133891.jpg?size=626&ext=jpg&uid=R98219700&ga=GA1.2.1081700445.1665935105&semt=ais",
+      "activity": "German Language and Culture",
+      "students": 22
+    },
+    {
+      "_id": "5",
+      "image": "https://img.freepik.com/free-vector/learning-chinese-concept-illustration_114360-16499.jpg?size=626&ext=jpg&uid=R98219700&ga=GA1.2.1081700445.1665935105&semt=ais",
+      "activity": "Chinese Mandarin for Kids",
+      "students": 20
+    },
+    {
+      "_id": "6",
+      "image": "https://img.freepik.com/free-vector/japanese-calligraphy-concept-illustration_114360-4181.jpg?size=626&ext=jpg&uid=R98219700&ga=GA1.2.1081700445.1665935105&semt=ais",
+      "activity": "Japanese Language and Culture",
+      "students": 18
+    }
+  ]
+  
