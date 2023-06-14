@@ -6,7 +6,7 @@ const useMenu = () => {
     const {data: menu = [], isLoading: loading, refetch} = useQuery({
         queryKey: ['populer'],
         queryFn: async() => {
-            const res = await fetch('http://localhost:5000/populer');
+            const res = await fetch('https://y-psi-hazel.vercel.app/populer');
             return res.json();
         }
     })

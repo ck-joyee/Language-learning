@@ -12,7 +12,7 @@ function ClassesCart({populer}) {
     const handlebutton = ({populer}) =>{
       if(user && user.email){
         const list ={_id,activity,image,students,price,email:user.email};
-        fetch('http://localhost:5000/carts',
+        fetch('https://y-psi-hazel.vercel.app/carts',
         {
           method: 'POST',
           headers:{

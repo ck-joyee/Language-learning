@@ -9,7 +9,7 @@ const useCart = () => {
     ["carts", user?.email],
     async () => {
       const response = await fetch(
-        `http://localhost:5000/carts?email=${user?.email}`,
+        `https://y-psi-hazel.vercel.app/carts?email=${user?.email}`,
         {
           headers: {
             authorization: `bearer ${token}`,

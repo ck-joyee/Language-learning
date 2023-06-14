@@ -13,7 +13,7 @@ function AllUsers() {
   });
 
   const hendelupdate = user =>{
-          fetch(`http://localhost:5000/users/admin/${user._id}`,{
+          fetch(`https://y-psi-hazel.vercel.app/users/admin/${user._id}`,{
             method: 'PATCH'
           })
           .then(res=>res.json())
