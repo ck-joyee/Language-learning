@@ -1,16 +1,16 @@
 
 import { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
-// import { useNavigate } from 'react-router-dom';
 
-function PopularClassCard({populer}) {
-  const {_id,activity,students} = populer
+
+function PopularClassCard({popular}) {
+  const {_id,activity,students} = popular
   const {user} = useContext(AuthContext);
-//   const navigate = useNavigate();
-  const handlebutton = ({populer}) =>{
+
+  const handlebutton = ({popular}) =>{
     if(user && user.email){
       const list ={listId:_id,activity,students,email:user.email};
-      fetch('http://localhost:5000/carts',
+      fetch('',
       {
         method: 'POST',
         headers:{
@@ -30,18 +30,18 @@ function PopularClassCard({populer}) {
       })
     }
 
-     console.log(populer);
+     console.log(popular);
   }
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
   <figure >
-    <img src={populer.image} alt="Shoes" className="rounded-xl" />
+    <img src={popular.image} alt="Shoes" className="rounded-xl" />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">Activity : {populer.activity}</h2>
-    <p>Students : {populer.students}+</p>
+    <h2 className="card-title">Activity : {popular.activity}</h2>
+    <p>Students : {popular.students}+</p>
     <div className="card-actions">
-      <button onClick={()=>handlebutton({populer})} className="btn btn-primary">Add to card</button>
+      <button onClick={()=>handlebutton({popular})} className="btn btn-primary">Add to card</button>
     </div>
   </div>
 </div>

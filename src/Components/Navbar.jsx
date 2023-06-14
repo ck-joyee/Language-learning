@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import logo from "../assets/L logo.jpg";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import useCart from "./hook/useCart";
+
 
 const Navbar = () => {
+  const [cart] = useCart();
   const {user, logOut} = useContext(AuthContext);
   const handleLogout = () =>{
     logOut()
@@ -16,16 +19,22 @@ const Navbar = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
+
       <li>
-        <Link to="">Instructors</Link>
+        <Link to="/instructor">Our Instructor</Link>
       </li>
       <li>
-        <Link to="">Classes</Link>
+        <Link to="/classes">Classes</Link>
       </li>
       <li>
-        <Link to="">Dashboard</Link>
+        <Link to="/Dashborart/mystudent">
+          <button >
+            Dashborard
+            <div className="badge bg-black border-none text-white">+{cart?.length || 0}</div>
+          </button>
+        </Link>
       </li>
-    </>
+      </>
   );
   return (
     <>

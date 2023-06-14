@@ -6,7 +6,7 @@ function PopularClass() {
     const [data,setData] = useState([]);
 
     useEffect(()=>{
-        fetch("http://localhost:5000/populer")
+        fetch("http://localhost:5000/popular")
         .then(res => res.json())
         .then(data=>setData(data))
     }, [])
@@ -17,9 +17,9 @@ function PopularClass() {
         <h1 className='text-3xl text-center mt-5 mb-5 font-bold'>Some Popular Classes</h1>
         <div className='grid md:grid-cols-3 gap-4 grid-cols-1'>
             {
-                data.map(populer =><PopularClassCard
-                key={populer._id}
-                populer={populer}></PopularClassCard>)
+                data.map(popular =><PopularClassCard
+                key={popular._id}
+                popular={popular}></PopularClassCard>)
             }
         </div>
 
